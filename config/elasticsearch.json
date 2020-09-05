@@ -1,0 +1,6 @@
+{
+    "host_url" : "localhost:9200",
+    "logLevel" : "trace" ,
+    "type"     : "geojson",
+    "maxRetries" : 5
+}
