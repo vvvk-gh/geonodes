@@ -1,3 +1,6 @@
 {
-    "url" : "https://nodejs.org/dist/index.json"
+    "url" : "http://35.233.185.162:8080/geoserver/cite/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=cite:SimpleFeatureGeneral&outputFormat=application/json" 
 }
+
+
+    

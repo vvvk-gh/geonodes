@@ -1,8 +1,7 @@
 const esClient = require('../lib/connection');
 const esConfig = require('../config/elasticsearch.json')
 const makeBulk = require('../utils/makeBulk')
-const file  = require('../geomesa.json');
-
+const file = require('../geomesa.json')
 
 
 const writeBulkIndex = async (indexName) => {
@@ -10,7 +9,7 @@ const writeBulkIndex = async (indexName) => {
         maxRetries: esConfig.maxRetries,
         index : indexName,
         type : esConfig.type,
-        body : makeBulk(file , indexName)
+        body : await makeBulk(file , indexName)
     })
 }
 
